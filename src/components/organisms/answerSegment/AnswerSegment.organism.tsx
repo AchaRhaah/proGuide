@@ -5,7 +5,6 @@ function AnswerSegment() {
   return (
     <div className="w-full  ">
       <Answer answerType="radio" /> <Answer answerType="radio" />{" "}
-      <Answer answerType="radio" />{" "}
     </div>
   );
 }

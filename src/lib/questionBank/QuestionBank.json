@@ -1,0 +1,450 @@
+{
+  "quadraticEquations": [
+    {
+      "id": 1,
+      "question": "Solve the quadratic equation: $$x^2 - 6x + 9 = 0$$",
+      "options": [
+        "x = 1, x = 9",
+        "x = 3, x = 3",
+        "x = 2, x = 4",
+        "x = 3, x = 6"
+      ],
+      "correctAnswer": "x = 3, x = 3"
+    },
+    {
+      "id": 2,
+      "question": "Find the roots of the equation: $$x^2 - 10x + 25 = 0$$",
+      "options": [
+        "x = 5, x = 5",
+        "x = 4, x = 6",
+        "x = 2, x = 12",
+        "x = 3, x = 7"
+      ],
+      "correctAnswer": "x = 5, x = 5"
+    },
+    {
+      "id": 3,
+      "question": "Solve the quadratic equation: $$2x^2 - 5x + 2 = 0$$",
+      "options": [
+        "x = 1/2, x = 2",
+        "x = 1, x = 1",
+        "x = 2, x = 3",
+        "x = 1/2, x = 1"
+      ],
+      "correctAnswer": "x = 1/2, x = 2"
+    },
+    {
+      "id": 4,
+      "question": "Find the roots of the equation: $$x^2 - 14x + 49 = 0$$",
+      "options": [
+        "x = 7, x = 7",
+        "x = 3, x = 11",
+        "x = 5, x = 9",
+        "x = 6, x = 8"
+      ],
+      "correctAnswer": "x = 7, x = 7"
+    },
+    {
+      "id": 5,
+      "question": "Solve the quadratic equation: $$3x^2 - 9x + 6 = 0$$",
+      "options": [
+        "x = 1, x = 1",
+        "x = 2, x = 3",
+        "x = 1/2, x = 2",
+        "x = 1, x = 2"
+      ],
+      "correctAnswer": "x = 1, x = 2"
+    },
+    {
+      "id": 6,
+      "question": "Find the roots of the equation: $$2x^2 - 7x + 3 = 0$$",
+      "options": [
+        "x = 1, x = 3/2",
+        "x = 1/2, x = 3",
+        "x = 1, x = 2",
+        "x = 2, x = 3/2"
+      ],
+      "correctAnswer": "x = 1, x = 3/2"
+    },
+    {
+      "id": 7,
+      "question": "Solve the quadratic equation: $$x^2 - 15x + 36 = 0$$",
+      "options": [
+        "x = 4, x = 9",
+        "x = 6, x = 6",
+        "x = 3, x = 12",
+        "x = 5, x = 10"
+      ],
+      "correctAnswer": "x = 4, x = 9"
+    },
+    {
+      "id": 8,
+      "question": "Find the roots of the equation: $$4x^2 - 8x + 4 = 0$$",
+      "options": [
+        "x = 1, x = 1",
+        "x = 1/2, x = 1",
+        "x = 2, x = 2",
+        "x = 1, x = 2"
+      ],
+      "correctAnswer": "x = 1, x = 1"
+    },
+    {
+      "id": 9,
+      "question": "Solve the quadratic equation: $$3x^2 - 12x + 12 = 0$$",
+      "options": [
+        "x = 1, x = 4",
+        "x = 2, x = 5",
+        "x = 2, x = 3",
+        "x = 3, x = 4"
+      ],
+      "correctAnswer": "x = 2, x = 2"
+    },
+    {
+      "id": 10,
+      "question": "Find the roots of the equation: $$x^2 - 12x + 36 = 0$$",
+      "options": [
+        "x = 3, x = 9",
+        "x = 4, x = 8",
+        "x = 6, x = 6",
+        "x = 5, x = 7"
+      ],
+      "correctAnswer": "x = 6, x = 6"
+    }
+  ],
+  "inequalities": [
+    {
+      "id": 1,
+      "question": "Solve the inequality: $$2x^2 - 5x - 3 > 0$$",
+      "options": [
+        "x < -1/2 or x > 3",
+        "x < -1/3 or x > 2",
+        "x < 1/2 or x > 3",
+        "x < 1/3 or x > 2"
+      ],
+      "correctAnswer": "x < -1/3 or x > 3"
+    },
+    {
+      "id": 2,
+      "question": "Solve the inequality: $$x^2 - 6x + 8 < 0$$",
+      "options": [
+        "x < 2 or x > 4",
+        "x < 3 or x > 5",
+        "x < 1 or x > 4",
+        "x < 2 or x > 5"
+      ],
+      "correctAnswer": "x < 2 or x > 4"
+    },
+    {
+      "id": 3,
+      "question": "Solve the inequality: $$3x^2 + 2x - 1 < 0$$",
+      "options": [
+        "x < -1 or x > 1/3",
+        "x < -1/3 or x > 1",
+        "x < 1/3 or x > -1",
+        "x < 1 or x > -1/3"
+      ],
+      "correctAnswer": "x < -1/3 or x > 1/3"
+    },
+    {
+      "id": 4,
+      "question": "Solve the inequality: $$x^2 - 10x + 24 > 0$$",
+      "options": [
+        "x < 2 or x > 8",
+        "x < 3 or x > 9",
+        "x < 4 or x > 10",
+        "x < 2 or x > 10"
+      ],
+      "correctAnswer": "x < 2 or x > 8"
+    },
+    {
+      "id": 5,
+      "question": "Solve the inequality: $$2x^2 - 4x - 4 < 0$$",
+      "options": [
+        "x < -1 or x > 2",
+        "x < -1/2 or x > 2",
+        "x < 1 or x > 2",
+        "x < -1 or x > 1/2"
+      ],
+      "correctAnswer": "x < -1 or x > 1/2"
+    },
+    {
+      "id": 6,
+      "question": "Solve the inequality: $$x^2 - 8x + 12 > 0$$",
+      "options": [
+        "x < 2 or x > 6",
+        "x < 3 or x > 7",
+        "x < 2 or x > 7",
+        "x < 3 or x > 6"
+      ],
+      "correctAnswer": "x < 2 or x > 6"
+    },
+    {
+      "id": 7,
+      "question": "Solve the inequality: $$3x^2 - 12x + 12 < 0$$",
+      "options": [
+        "x < 2 or x > 2",
+        "x < 1 or x > 3",
+        "x < 1 or x > 2",
+        "x < 2 or x > 3"
+      ],
+      "correctAnswer": "x < 1 or x > 2"
+    },
+    {
+      "id": 8,
+      "question": "Solve the inequality: $$2x^2 - 3x - 2 > 0$$",
+      "options": [
+        "x < -1/2 or x > 2",
+        "x < 1/2 or x > 3",
+        "x < 1/2 or x > 2",
+        "x < -1/2 or x > 3"
+      ],
+      "correctAnswer": "x < -1/2 or x > 2"
+    },
+    {
+      "id": 9,
+      "question": "Solve the inequality: $$x^2 - 7x + 12 > 0$$",
+      "options": [
+        "x < 3 or x > 4",
+        "x < 2 or x > 6",
+        "x < 3 or x > 5",
+        "x < 4 or x > 6"
+      ],
+      "correctAnswer": "x < 3 or x > 4"
+    },
+    {
+      "id": 10,
+      "question": "Solve the inequality: $$2x^2 - 9x + 4 > 0$$",
+      "options": [
+        "x < 1/2 or x > 2",
+        "x < 1 or x > 4",
+        "x < 2 or x > 3",
+        "x < 1/4 or x > 2"
+      ],
+      "correctAnswer": "x < 1/4 or x > 2"
+    }
+  ],
+  "differentialEquations": [
+    {
+      "id": 1,
+      "question": "Find the derivative of $$f(x) = 3x^2 + 2x - 1$$",
+      "options": [
+        "$$f'(x) = 6x + 2$$",
+        "$$f'(x) = 6x - 2$$",
+        "$$f'(x) = 3x^2 - 2$$",
+        "$$f'(x) = 6x + 3$$"
+      ],
+      "correctAnswer": "$$f'(x) = 6x + 2$$"
+    },
+    {
+      "id": 2,
+      "question": "Find the derivative of $$f(x) = \\sin(x)$$",
+      "options": [
+        "$$f'(x) = \\cos(x)$$",
+        "$$f'(x) = -\\cos(x)$$",
+        "$$f'(x) = -\\sin(x)$$",
+        "$$f'(x) = \\sin(x)$$"
+      ],
+      "correctAnswer": "$$f'(x) = \\cos(x)$$"
+    },
+    {
+      "id": 3,
+      "question": "Find the derivative of $$f(x) = e^x$$",
+      "options": [
+        "$$f'(x) = e^x$$",
+        "$$f'(x) = e^{x+1}$$",
+        "$$f'(x) = e^{x-1}$$",
+        "$$f'(x) = e^{x-2}$$"
+      ],
+      "correctAnswer": "$$f'(x) = e^x$$"
+    },
+    {
+      "id": 4,
+      "question": "Find the derivative of $$f(x) = \\ln(x)$$",
+      "options": [
+        "$$f'(x) = \\frac{1}{x}$$",
+        "$$f'(x) = x$$",
+        "$$f'(x) = -x$$",
+        "$$f'(x) = \\frac{x}{2}$$"
+      ],
+      "correctAnswer": "$$f'(x) = \\frac{1}{x}$$"
+    },
+    {
+      "id": 5,
+      "question": "Find the derivative of $$f(x) = x^3 - 2x^2 + x$$",
+      "options": [
+        "$$f'(x) = 3x^2 - 4x + 1$$",
+        "$$f'(x) = 2x^2 - 3x + 1$$",
+        "$$f'(x) = 3x^2 - 4x - 1$$",
+        "$$f'(x) = 3x^2 - 2x$$"
+      ],
+      "correctAnswer": "$$f'(x) = 3x^2 - 4x + 1$$"
+    },
+    {
+      "id": 6,
+      "question": "Find the derivative of $$f(x) = \\cos(2x)$$",
+      "options": [
+        "$$f'(x) = -2\\sin(x)$$",
+        "$$f'(x) = -2\\cos(x)$$",
+        "$$f'(x) = 2\\sin(x)$$",
+        "$$f'(x) = 2\\cos(x)$$"
+      ],
+      "correctAnswer": "$$f'(x) = -2\\sin(x)$$"
+    },
+    {
+      "id": 7,
+      "question": "Find the derivative of $$f(x) = \\tan(x)$$",
+      "options": [
+        "$$f'(x) = \\sec^2(x)$$",
+        "$$f'(x) = -\\sec^2(x)$$",
+        "$$f'(x) = \\csc^2(x)$$",
+        "$$f'(x) = -\\csc^2(x)$$"
+      ],
+      "correctAnswer": "$$f'(x) = \\sec^2(x)$$"
+    },
+    {
+      "id": 8,
+      "question": "Find the derivative of $$f(x) = \\sqrt{x}$$",
+      "options": [
+        "$$f'(x) = \\frac{1}{2\\sqrt{x}}$$",
+        "$$f'(x) = \\frac{1}{2x}$$",
+        "$$f'(x) = \\frac{x}{2}$$",
+        "$$f'(x) = \\sqrt{x}$$"
+      ],
+      "correctAnswer": "$$f'(x) = \\frac{1}{2\\sqrt{x}}$$"
+    },
+    {
+      "id": 9,
+      "question": "Find the derivative of $$f(x) = \\frac{1}{x}$$",
+      "options": [
+        "$$f'(x) = -\\frac{1}{x^2}$$",
+        "$$f'(x) = -x$$",
+        "$$f'(x) = \\frac{1}{x^2}$$",
+        "$$f'(x) = \\frac{x}{2}$$"
+      ],
+      "correctAnswer": "$$f'(x) = -\\frac{1}{x^2}$$"
+    },
+    {
+      "id": 10,
+      "question": "Find the derivative of $$f(x) = \\ln(2x)$$",
+      "options": [
+        "$$f'(x) = \\frac{1}{x}$$",
+        "$$f'(x) = \\frac{1}{2x}$$",
+        "$$f'(x) = 2x$$",
+        "$$f'(x) = 2$$"
+      ],
+      "correctAnswer": "$$f'(x) = \\frac{1}{x}$$"
+    }
+  ],
+  "integration": [
+    {
+      "id": 1,
+      "question": "Evaluate the integral: $$\\int (3x^2 + 2x - 1) dx$$",
+      "options": [
+        "$$\\frac{3}{4}x^3 + x^2 - x + C$$",
+        "$$\\frac{1}{2}x^3 + x^2 - x + C$$",
+        "$$\\frac{1}{4}x^3 + x^2 - x + C$$",
+        "$$2x^3 + x^2 - x + C$$"
+      ],
+      "correctAnswer": "$$\\frac{1}{4}x^3 + x^2 - x + C$$"
+    },
+    {
+      "id": 2,
+      "question": "Evaluate the integral: $$\\int \\sin(x) dx$$",
+      "options": [
+        "$$\\cos(x) + C$$",
+        "$$\\sin(x) + C$$",
+        "$$\\tan(x) + C$$",
+        "$$\\csc(x) + C$$"
+      ],
+      "correctAnswer": "$$\\cos(x) + C$$"
+    },
+    {
+      "id": 3,
+      "question": "Evaluate the integral: $$\\int e^x dx$$",
+      "options": [
+        "$$e^x + C$$",
+        "$$\\ln(x) + C$$",
+        "$$x^2 + C$$",
+        "$$\\cos(x) + C$$"
+      ],
+      "correctAnswer": "$$e^x + C$$"
+    },
+    {
+      "id": 4,
+      "question": "Evaluate the integral: $$\\int \\frac{1}{x} dx$$",
+      "options": [
+        "$$\\ln|x| + C$$",
+        "$$\\sin(x) + C$$",
+        "$$\\frac{x^2}{2} + C$$",
+        "$$e^x + C$$"
+      ],
+      "correctAnswer": "$$\\ln|x| + C$$"
+    },
+    {
+      "id": 5,
+      "question": "Evaluate the integral: $$\\int (x^3 - 2x^2 + x) dx$$",
+      "options": [
+        "$$\\frac{1}{4}x^4 - \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + C$$",
+        "$$\\frac{1}{3}x^4 - \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + C$$",
+        "$$\\frac{1}{3}x^4 - 2x^3 + x^2 + C$$",
+        "$$\\frac{1}{4}x^4 - 2x^3 + x^2 + C$$"
+      ],
+      "correctAnswer": "$$\\frac{1}{4}x^4 - \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + C$$"
+    },
+    {
+      "id": 6,
+      "question": "Evaluate the integral: $$\\int \\cos(2x) dx$$",
+      "options": [
+        "$$\\frac{1}{2}\\sin(2x) + C$$",
+        "$$\\cos(2x) + C$$",
+        "$$\\sin(2x) + C$$",
+        "$$\\frac{1}{2}\\cos(2x) + C$$"
+      ],
+      "correctAnswer": "$$\\frac{1}{2}\\sin(2x) + C$$"
+    },
+    {
+      "id": 7,
+      "question": "Evaluate the integral: $$\\int \\tan(x) dx$$",
+      "options": [
+        "$$\\ln|\\sec(x)| + C$$",
+        "$$\\ln|\\sin(x)| + C$$",
+        "$$\\ln|\\cos(x)| + C$$",
+        "$$\\ln|\\csc(x)| + C$$"
+      ],
+      "correctAnswer": "$$\\ln|\\sec(x)| + C$$"
+    },
+    {
+      "id": 8,
+      "question": "Evaluate the integral: $$\\int \\sqrt{x} dx$$",
+      "options": [
+        "$$\\frac{2}{3}x^{3/2} + C$$",
+        "$$\\frac{2}{3}x^{1/2} + C$$",
+        "$$\\frac{1}{2}x^{3/2} + C$$",
+        "$$\\frac{1}{2}x^{1/2} + C$$"
+      ],
+      "correctAnswer": "$$\\frac{2}{3}x^{3/2} + C$$"
+    },
+    {
+      "id": 9,
+      "question": "Evaluate the integral: $$\\int \\frac{1}{x^2} dx$$",
+      "options": [
+        "$$-\\frac{1}{x} + C$$",
+        "$$\\frac{1}{x} + C$$",
+        "$$\\ln|x| + C$$",
+        "$$\\frac{1}{2x} + C$$"
+      ],
+      "correctAnswer": "$$-\\frac{1}{x} + C$$"
+    },
+    {
+      "id": 10,
+      "question": "Evaluate the integral: $$\\int \\ln(2x) dx$$",
+      "options": [
+        "$$\\frac{1}{2}\\ln(2x)^2 + C$$",
+        "$$\\ln(2x) + C$$",
+        "$$\\ln(2x)^2 + C$$",
+        "$$2\\ln(2x) + C$$"
+      ],
+      "correctAnswer": "$$\\ln(2x)^2 + C$$"
+    }
+  ]
+}
