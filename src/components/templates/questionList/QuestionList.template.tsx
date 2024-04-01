@@ -1,13 +1,11 @@
 import React, { useState } from "react";
+import { ProgressBar } from "../../atoms";
+import questionsData from "../../../lib/questionBank/QuestionBank.json";
 
 function QuestionList() {
-  const categories = [
-    "Quadratic equations",
-    "Inequalities",
-    "Differentiation",
-    "Intergration",
-  ];
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+  const categoriesName = Object.keys(questionsData);
+
+  const [selectedCategory, setSelectedCategory] = useState(categoriesName[0]);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -21,7 +19,7 @@ function QuestionList() {
           This test contains the following categories
         </p>
         <ul className="gap-1 flex flex-col mt-6 text-primary font-medium">
-          {categories.map((category, index) => (
+          {categoriesName.map((category, index) => (
             <li
               key={index}
               className={`py-2 px-1 rounded-lg ${
@@ -33,6 +31,7 @@ function QuestionList() {
             </li>
           ))}
         </ul>
+        <ProgressBar />
       </div>
     </div>
   );

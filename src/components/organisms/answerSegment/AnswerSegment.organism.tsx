@@ -1,10 +1,30 @@
 import React from "react";
 import { Answer } from "../../atoms";
+import { isFilePath } from "../../../lib/functions/isFilePath";
 
-function AnswerSegment() {
+interface AnswerSegmentProps {
+  options: string[];
+  selectedOption: string | null;
+  onSelect: (option: string) => void;
+}
+
+function AnswerSegment({
+  options,
+  selectedOption,
+  onSelect,
+}: AnswerSegmentProps) {
+  console.log(isFilePath(options[0]));
   return (
-    <div className="w-full  ">
-      <Answer answerType="radio" /> <Answer answerType="radio" />{" "}
+    <div className={"w-full grid grid-cols-2"}>
+      {options.map((option, index) => (
+        <Answer
+          key={index}
+          option={option}
+          index={index}
+          selectedOption={selectedOption}
+          onSelect={onSelect}
+        />
+      ))}
     </div>
   );
 }

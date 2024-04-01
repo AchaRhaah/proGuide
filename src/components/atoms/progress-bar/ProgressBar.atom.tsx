@@ -1,8 +1,9 @@
 import React from "react";
 
+
 function ProgressBar() {
   return (
-    <div className="w-full mt-20">
+    <div className="w-full mt-4">
       <div className="mb-1 text-base font-medium dark:text-white flex justify-end">
         <p>Default</p>
       </div>

@@ -1,265 +1,205 @@
 {
+  "Algebra": [
+    {
+      "id": 1,
+      "question": "if $$1<x<2$$, then the value of $$\\sqrt(x-1)^2 + \\sqrt(3-x)^2$$",
+      "image": "",
+      "options": ["$$1$$", "$$2$$", "$$3$$", "$$2x-4$$"],
+      "correctAnswer": "2",
+      "explanation": ""
+    },
+    {
+      "id": 2,
+      "question": "For what value(s) of a is $$x+\\frac{1}{4}\\sqrt(x)+a^2$$ a perfect square?",
+      "image": "",
+      "options": [
+        "$$\\pm \\frac{1}{18}$$",
+        "$$\\frac{1}{8}$$",
+        "$$-\\frac{1}{5}$$",
+        "$$\\frac{1}{4}$$"
+      ],
+      "correctAnswer": "$$\\frac{1}{8}$$",
+      "explanation": ""
+    },
+    {
+      "id": 3,
+      "question": "if $$a^2+b^2+2b+4a+5 = 0$$, then the value of $$\\frac{a-b}{a+b}$$",
+      "image": "",
+      "options": ["$$3$$", "$$-3$$", "$$\\frac{1}{3}$$", "$$-\\frac{1}{3}$$"],
+      "correctAnswer": "$$\\frac{1}{3}$$",
+      "explanation": ""
+    },
+    {
+      "id": 4,
+      "question": "if $$x=3+2\\sqrt2$$, then the value of $$\\sqrt(x) - \\sqrt\\frac{1}{\\sqrt(x)}$$",
+      "image": "",
+      "options": ["$$1$$", "$$2$$", "$$2\\sqrt(2)$$", "$$3\\sqrt(3)$$"],
+      "correctAnswer": "2",
+      "explanation": ""
+    },
+    {
+      "id": 5,
+      "question": "if $$p=999$$, then the value of $$\\sqrt[3](p(p^2 + 3p + 3) + 1)$$",
+      "image": "",
+      "options": ["$$1000$$", "$$999$$", "$$998$$", "$$1002$$"],
+      "correctAnswer": "2",
+      "explanation": ""
+    }
+  ],
   "quadraticEquations": [
     {
       "id": 1,
       "question": "Solve the quadratic equation: $$x^2 - 6x + 9 = 0$$",
+      "image": "",
       "options": [
-        "x = 1, x = 9",
-        "x = 3, x = 3",
-        "x = 2, x = 4",
-        "x = 3, x = 6"
+        "$$x = 1, x = 9 $$",
+        "$$x = 3, x = 3$$",
+        "$$x = 2, x = 4$$",
+        "$$x = 3, x = 6$$"
       ],
-      "correctAnswer": "x = 3, x = 3"
+      "correctAnswer": "$$x = 3, x = 3$$"
     },
     {
       "id": 2,
       "question": "Find the roots of the equation: $$x^2 - 10x + 25 = 0$$",
+      "image": "",
       "options": [
-        "x = 5, x = 5",
-        "x = 4, x = 6",
-        "x = 2, x = 12",
-        "x = 3, x = 7"
+        "$$x = 5, x = 5$$",
+        "$$x = 4, x = 6$$",
+        "$$x = 2, x = 12$$",
+        "$$x = 3, x = 7$$"
       ],
-      "correctAnswer": "x = 5, x = 5"
+      "correctAnswer": "$$x = 5, x = 5$$"
     },
     {
       "id": 3,
       "question": "Solve the quadratic equation: $$2x^2 - 5x + 2 = 0$$",
+      "image": "",
       "options": [
-        "x = 1/2, x = 2",
-        "x = 1, x = 1",
-        "x = 2, x = 3",
-        "x = 1/2, x = 1"
+        "$$x = \\frac{1}{2} , x=2$$",
+        "$$x = 1, x = 1$$",
+        "$$x = 2, x = 3$$",
+        "$$x = 1/2, x = 1$$"
       ],
-      "correctAnswer": "x = 1/2, x = 2"
+      "correctAnswer": "$$x = \\frac{1}{2} , x = 2$$"
     },
     {
       "id": 4,
       "question": "Find the roots of the equation: $$x^2 - 14x + 49 = 0$$",
+      "image": "",
       "options": [
-        "x = 7, x = 7",
-        "x = 3, x = 11",
-        "x = 5, x = 9",
-        "x = 6, x = 8"
+        "$$x = 7, x = 7$$",
+        "$$x = 3, x = 11$$",
+        "$$x = 5, x = 9$$",
+        "$$x = 6, x = 8$$"
       ],
-      "correctAnswer": "x = 7, x = 7"
+      "correctAnswer": "$$x = 7, x = 7$$"
     },
     {
       "id": 5,
       "question": "Solve the quadratic equation: $$3x^2 - 9x + 6 = 0$$",
+      "image": "",
       "options": [
-        "x = 1, x = 1",
-        "x = 2, x = 3",
-        "x = 1/2, x = 2",
-        "x = 1, x = 2"
+        "$$x = 1, x = 1$$",
+        "$$x = 2, x = 3$$",
+        "$$x = \\frac{1}{2}, x = 2$$",
+        "$$x = 1, x = 2$$"
       ],
-      "correctAnswer": "x = 1, x = 2"
+      "correctAnswer": "$$x = 1, x = 2$$"
     },
     {
       "id": 6,
       "question": "Find the roots of the equation: $$2x^2 - 7x + 3 = 0$$",
+      "image": "",
       "options": [
-        "x = 1, x = 3/2",
-        "x = 1/2, x = 3",
-        "x = 1, x = 2",
-        "x = 2, x = 3/2"
+        "$$x = 1, x = \\frac{3}{2}$$",
+        "$$x = 1/2, x = 3$$",
+        "$$x = 1, x = 2$$",
+        "$$x = 2, x = \\frac{3}{2}$$"
       ],
-      "correctAnswer": "x = 1, x = 3/2"
+      "correctAnswer": "$$x = 1, x = frac{3}{2}$$"
     },
     {
       "id": 7,
       "question": "Solve the quadratic equation: $$x^2 - 15x + 36 = 0$$",
+      "image": "",
       "options": [
-        "x = 4, x = 9",
-        "x = 6, x = 6",
-        "x = 3, x = 12",
-        "x = 5, x = 10"
+        "$$x = 4, x = 9$$",
+        "$$x = 6, x = 6$$",
+        "$$x = 3, x = 12$$",
+        "$$x = 5, x = 10$$"
       ],
-      "correctAnswer": "x = 4, x = 9"
+      "correctAnswer": "$$x = 4, x = 9$$"
     },
     {
       "id": 8,
       "question": "Find the roots of the equation: $$4x^2 - 8x + 4 = 0$$",
+      "image": "",
       "options": [
-        "x = 1, x = 1",
-        "x = 1/2, x = 1",
-        "x = 2, x = 2",
-        "x = 1, x = 2"
+        "$$x = 1, x = 1$$",
+        "$$x = 1/2, x = 1$$",
+        "$$x = 2, x = 2$$",
+        "$$x = 1, x = 2$$"
       ],
-      "correctAnswer": "x = 1, x = 1"
+      "correctAnswer": "$$x = 1, x = 1$$"
     },
     {
       "id": 9,
       "question": "Solve the quadratic equation: $$3x^2 - 12x + 12 = 0$$",
+      "image": "",
       "options": [
-        "x = 1, x = 4",
-        "x = 2, x = 5",
-        "x = 2, x = 3",
-        "x = 3, x = 4"
+        "$$x = 1, x = 4$$",
+        "$$x = 2, x = 5$$",
+        "$$x = 2, x = 3$$",
+        "$$x = 3, x = 4$$"
       ],
-      "correctAnswer": "x = 2, x = 2"
+      "correctAnswer": "$$x = 2, x = 2$$"
     },
     {
       "id": 10,
       "question": "Find the roots of the equation: $$x^2 - 12x + 36 = 0$$",
+      "image": "",
       "options": [
-        "x = 3, x = 9",
-        "x = 4, x = 8",
-        "x = 6, x = 6",
-        "x = 5, x = 7"
+        "$$x = 3, x = 9$$",
+        "$$x = 4, x = 8$$",
+        "$$x = 6, x = 6$$",
+        "$$x = 5, x = 7$$"
       ],
-      "correctAnswer": "x = 6, x = 6"
+      "correctAnswer": "$$x = 6, x = 6$$"
     }
   ],
-  "inequalities": [
-    {
-      "id": 1,
-      "question": "Solve the inequality: $$2x^2 - 5x - 3 > 0$$",
-      "options": [
-        "x < -1/2 or x > 3",
-        "x < -1/3 or x > 2",
-        "x < 1/2 or x > 3",
-        "x < 1/3 or x > 2"
-      ],
-      "correctAnswer": "x < -1/3 or x > 3"
-    },
-    {
-      "id": 2,
-      "question": "Solve the inequality: $$x^2 - 6x + 8 < 0$$",
-      "options": [
-        "x < 2 or x > 4",
-        "x < 3 or x > 5",
-        "x < 1 or x > 4",
-        "x < 2 or x > 5"
-      ],
-      "correctAnswer": "x < 2 or x > 4"
-    },
-    {
-      "id": 3,
-      "question": "Solve the inequality: $$3x^2 + 2x - 1 < 0$$",
-      "options": [
-        "x < -1 or x > 1/3",
-        "x < -1/3 or x > 1",
-        "x < 1/3 or x > -1",
-        "x < 1 or x > -1/3"
-      ],
-      "correctAnswer": "x < -1/3 or x > 1/3"
-    },
-    {
-      "id": 4,
-      "question": "Solve the inequality: $$x^2 - 10x + 24 > 0$$",
-      "options": [
-        "x < 2 or x > 8",
-        "x < 3 or x > 9",
-        "x < 4 or x > 10",
-        "x < 2 or x > 10"
-      ],
-      "correctAnswer": "x < 2 or x > 8"
-    },
-    {
-      "id": 5,
-      "question": "Solve the inequality: $$2x^2 - 4x - 4 < 0$$",
-      "options": [
-        "x < -1 or x > 2",
-        "x < -1/2 or x > 2",
-        "x < 1 or x > 2",
-        "x < -1 or x > 1/2"
-      ],
-      "correctAnswer": "x < -1 or x > 1/2"
-    },
-    {
-      "id": 6,
-      "question": "Solve the inequality: $$x^2 - 8x + 12 > 0$$",
-      "options": [
-        "x < 2 or x > 6",
-        "x < 3 or x > 7",
-        "x < 2 or x > 7",
-        "x < 3 or x > 6"
-      ],
-      "correctAnswer": "x < 2 or x > 6"
-    },
-    {
-      "id": 7,
-      "question": "Solve the inequality: $$3x^2 - 12x + 12 < 0$$",
-      "options": [
-        "x < 2 or x > 2",
-        "x < 1 or x > 3",
-        "x < 1 or x > 2",
-        "x < 2 or x > 3"
-      ],
-      "correctAnswer": "x < 1 or x > 2"
-    },
-    {
-      "id": 8,
-      "question": "Solve the inequality: $$2x^2 - 3x - 2 > 0$$",
-      "options": [
-        "x < -1/2 or x > 2",
-        "x < 1/2 or x > 3",
-        "x < 1/2 or x > 2",
-        "x < -1/2 or x > 3"
-      ],
-      "correctAnswer": "x < -1/2 or x > 2"
-    },
-    {
-      "id": 9,
-      "question": "Solve the inequality: $$x^2 - 7x + 12 > 0$$",
-      "options": [
-        "x < 3 or x > 4",
-        "x < 2 or x > 6",
-        "x < 3 or x > 5",
-        "x < 4 or x > 6"
-      ],
-      "correctAnswer": "x < 3 or x > 4"
-    },
-    {
-      "id": 10,
-      "question": "Solve the inequality: $$2x^2 - 9x + 4 > 0$$",
-      "options": [
-        "x < 1/2 or x > 2",
-        "x < 1 or x > 4",
-        "x < 2 or x > 3",
-        "x < 1/4 or x > 2"
-      ],
-      "correctAnswer": "x < 1/4 or x > 2"
-    }
-  ],
+
   "differentialEquations": [
     {
       "id": 1,
-      "question": "Find the derivative of $$f(x) = 3x^2 + 2x - 1$$",
-      "options": [
-        "$$f'(x) = 6x + 2$$",
-        "$$f'(x) = 6x - 2$$",
-        "$$f'(x) = 3x^2 - 2$$",
-        "$$f'(x) = 6x + 3$$"
-      ],
+      "question": "Find $$\\frac{dy}{dx}(3x^2 + 2x - 1)=$$",
+      "image": "",
+      "options": ["$$6x + 2$$", "$$6x - 2$$", "$$3x^2 - 2$$", "$$6x + 3$$"],
       "correctAnswer": "$$f'(x) = 6x + 2$$"
     },
     {
       "id": 2,
-      "question": "Find the derivative of $$f(x) = \\sin(x)$$",
+      "question": "Find $$\\frac{dy}{dx}\\sin(x) =$$",
+      "image": "",
       "options": [
-        "$$f'(x) = \\cos(x)$$",
-        "$$f'(x) = -\\cos(x)$$",
-        "$$f'(x) = -\\sin(x)$$",
-        "$$f'(x) = \\sin(x)$$"
+        "$$\\cos(x)$$",
+        "$$-\\cos(x)$$",
+        "$$-\\sin(x)$$",
+        "$$\\sin(x)$$"
       ],
-      "correctAnswer": "$$f'(x) = \\cos(x)$$"
+      "correctAnswer": "$$ \\cos(x)$$"
     },
     {
       "id": 3,
-      "question": "Find the derivative of $$f(x) = e^x$$",
-      "options": [
-        "$$f'(x) = e^x$$",
-        "$$f'(x) = e^{x+1}$$",
-        "$$f'(x) = e^{x-1}$$",
-        "$$f'(x) = e^{x-2}$$"
-      ],
-      "correctAnswer": "$$f'(x) = e^x$$"
+      "question": "Find $$\\frac{dy}{dx}( e^x) =$$ ",
+      "image": "",
+      "options": ["$$e^x$$", "$$e^{x+1}$$", "$$e^{x-1}$$", "$$e^{x-2}$$"],
+      "correctAnswer": "$$e^x$$"
     },
     {
       "id": 4,
       "question": "Find the derivative of $$f(x) = \\ln(x)$$",
+      "image": "",
       "options": [
         "$$f'(x) = \\frac{1}{x}$$",
         "$$f'(x) = x$$",
@@ -270,18 +210,20 @@
     },
     {
       "id": 5,
-      "question": "Find the derivative of $$f(x) = x^3 - 2x^2 + x$$",
+      "question": "Find $$\\frac{dy}{dx} (x^3 - 2x^2 + x) = $$",
+      "image": "",
       "options": [
-        "$$f'(x) = 3x^2 - 4x + 1$$",
-        "$$f'(x) = 2x^2 - 3x + 1$$",
-        "$$f'(x) = 3x^2 - 4x - 1$$",
-        "$$f'(x) = 3x^2 - 2x$$"
+        "$$3x^2 - 4x + 1$$",
+        "$$2x^2 - 3x + 1$$",
+        "$$3x^2 - 4x - 1$$",
+        "$$3x^2 - 2x$$"
       ],
       "correctAnswer": "$$f'(x) = 3x^2 - 4x + 1$$"
     },
     {
       "id": 6,
       "question": "Find the derivative of $$f(x) = \\cos(2x)$$",
+      "image": "",
       "options": [
         "$$f'(x) = -2\\sin(x)$$",
         "$$f'(x) = -2\\cos(x)$$",
@@ -293,6 +235,7 @@
     {
       "id": 7,
       "question": "Find the derivative of $$f(x) = \\tan(x)$$",
+      "image": "",
       "options": [
         "$$f'(x) = \\sec^2(x)$$",
         "$$f'(x) = -\\sec^2(x)$$",
@@ -304,6 +247,7 @@
     {
       "id": 8,
       "question": "Find the derivative of $$f(x) = \\sqrt{x}$$",
+      "image": "",
       "options": [
         "$$f'(x) = \\frac{1}{2\\sqrt{x}}$$",
         "$$f'(x) = \\frac{1}{2x}$$",
@@ -315,6 +259,7 @@
     {
       "id": 9,
       "question": "Find the derivative of $$f(x) = \\frac{1}{x}$$",
+      "image": "",
       "options": [
         "$$f'(x) = -\\frac{1}{x^2}$$",
         "$$f'(x) = -x$$",
@@ -326,6 +271,7 @@
     {
       "id": 10,
       "question": "Find the derivative of $$f(x) = \\ln(2x)$$",
+      "image": "",
       "options": [
         "$$f'(x) = \\frac{1}{x}$$",
         "$$f'(x) = \\frac{1}{2x}$$",
@@ -339,6 +285,7 @@
     {
       "id": 1,
       "question": "Evaluate the integral: $$\\int (3x^2 + 2x - 1) dx$$",
+      "image": "",
       "options": [
         "$$\\frac{3}{4}x^3 + x^2 - x + C$$",
         "$$\\frac{1}{2}x^3 + x^2 - x + C$$",
@@ -350,6 +297,7 @@
     {
       "id": 2,
       "question": "Evaluate the integral: $$\\int \\sin(x) dx$$",
+      "image": "",
       "options": [
         "$$\\cos(x) + C$$",
         "$$\\sin(x) + C$$",
@@ -361,6 +309,7 @@
     {
       "id": 3,
       "question": "Evaluate the integral: $$\\int e^x dx$$",
+      "image": "",
       "options": [
         "$$e^x + C$$",
         "$$\\ln(x) + C$$",
@@ -372,6 +321,7 @@
     {
       "id": 4,
       "question": "Evaluate the integral: $$\\int \\frac{1}{x} dx$$",
+      "image": "",
       "options": [
         "$$\\ln|x| + C$$",
         "$$\\sin(x) + C$$",
@@ -383,6 +333,7 @@
     {
       "id": 5,
       "question": "Evaluate the integral: $$\\int (x^3 - 2x^2 + x) dx$$",
+      "image": "",
       "options": [
         "$$\\frac{1}{4}x^4 - \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + C$$",
         "$$\\frac{1}{3}x^4 - \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + C$$",
@@ -394,6 +345,7 @@
     {
       "id": 6,
       "question": "Evaluate the integral: $$\\int \\cos(2x) dx$$",
+      "image": "",
       "options": [
         "$$\\frac{1}{2}\\sin(2x) + C$$",
         "$$\\cos(2x) + C$$",
@@ -405,6 +357,7 @@
     {
       "id": 7,
       "question": "Evaluate the integral: $$\\int \\tan(x) dx$$",
+      "image": "",
       "options": [
         "$$\\ln|\\sec(x)| + C$$",
         "$$\\ln|\\sin(x)| + C$$",
@@ -416,6 +369,7 @@
     {
       "id": 8,
       "question": "Evaluate the integral: $$\\int \\sqrt{x} dx$$",
+      "image": "",
       "options": [
         "$$\\frac{2}{3}x^{3/2} + C$$",
         "$$\\frac{2}{3}x^{1/2} + C$$",
@@ -427,6 +381,7 @@
     {
       "id": 9,
       "question": "Evaluate the integral: $$\\int \\frac{1}{x^2} dx$$",
+      "image": "",
       "options": [
         "$$-\\frac{1}{x} + C$$",
         "$$\\frac{1}{x} + C$$",
@@ -438,6 +393,8 @@
     {
       "id": 10,
       "question": "Evaluate the integral: $$\\int \\ln(2x) dx$$",
+      "image": "",
+      "image": "",
       "options": [
         "$$\\frac{1}{2}\\ln(2x)^2 + C$$",
         "$$\\ln(2x) + C$$",
@@ -445,6 +402,68 @@
         "$$2\\ln(2x) + C$$"
       ],
       "correctAnswer": "$$\\ln(2x)^2 + C$$"
+    }
+  ],
+  "Mechanics": [
+    {
+      "id": 1,
+      "question": "You accelerate the two blocks in the image below by pushing on the bottom block with a force F. The top block moves along with the bottom block. What force directly causes the top block to accelerate?",
+      "image": "src/assets/questionImages/mech1.png",
+      "options": [
+        "the normal force between the blocks",
+        "the friction force between the blocks",
+        " the gravitational force on the top block",
+        " the force you apply to the bottom block"
+      ],
+      "correctAnswer": "the friction force between the blocks",
+      "explanation": ""
+    },
+    {
+      "id": 2,
+      "question": "Three boxes are pushed with a force F across a frictionless table, as shown in the image below. Let N1 be the normal force between the left two boxes, and let N2 be the normal force between the right two boxes. Then:",
+      "image": "src/assets/questionImages/mech2.png",
+      "options": [
+        "$$ F = N_{1} = N_{2}$$",
+        "$$F > N_{1} = N_{2}$$",
+        "$$F + N_{1} = N_{2}$$",
+        "$$F > N_{1} > N_{2}$$"
+      ],
+      "correctAnswer": "D. $$F > N_{1} > N_{2}$$"
+    },
+    {
+      "id": 3,
+      "question": "Two blocks with masses 2 kg and 1 kg lie on a frictionless table. A force of 3 N is appliedas shown in the image below What is the normal force between the blocks?",
+      "image": "src/assets/questionImages/mech3.png",
+      "options": ["$$5 N$$", "$$0 N$$", "$$1 N$$", "$$3 N$$"],
+      "correctAnswer": "$$1 N$$"
+    },
+    {
+      "id": 4,
+      "question": "A block sits on a plane, and there is friction between the block and the plane. The plane is accelerated to the right If the block remains at the same position on the plane, which of the following pictures might show the free-body diagram for the block? (All of the vectors shown are forces.)",
+      "image": "",
+      "options": [
+        "src/assets/answerImages/a_block_sits_on_a_plane/a.png",
+        "src/assets/answerImages/a_block_sits_on_a_plane/b.png",
+        "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
+        "src/assets/answerImages/a_block_sits_on_a_plane/d.png"
+      ],
+
+      "correctAnswer": "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
+      "explanation": "The gravitational force exists, as does the normal force (to keep the block from falling though the plane). The friction force might or might not exist (and it might point in either direction). So the correct answer must be (a), (b), or (c). But ma isn’t a force, so we’re left with choice (c) as the only possibility. If you want to draw the acceleration vector in a free-body diagram, you must draw it differently (say, with a dotted line) to signify that it isn’t a force!"
+    },
+    {
+      "id": 5,
+      "question": ". A plane in a holding pattern is flying in a horizontal circle at constant speed. Which of the following free-body diagrams best illustrates the various forces acting on the plane at the instant shown?",
+      "image": "",
+      "options": [
+        "src/assets/answerImages/a_plane_in_a_holding/a.png",
+        "src/assets/answerImages/a_plane_in_a_holding/b.png",
+        "src/assets/answerImages/a_plane_in_a_holding/c.png",
+        "src/assets/answerImages/a_plane_in_a_holding/d.png"
+      ],
+
+      "correctAnswer": "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
+      "explanation": "Gravity acts downward. The force from the air must have an upward component to balance gravity (because there is zero vertical acceleration), and also a radially inward component to provide the nonzero centripetal acceleration. So the net force from the air points in a diagonal direction, upward and leftward. The gravitational and air forces are the only two forces, so the correct answer is (c)."
     }
   ]
 }
