@@ -10,7 +10,7 @@ import { AnswerProvider } from "./context/AnswerContext";
 import { MathJaxContext } from "better-react-mathjax";
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/test",
     element: (
       <MathJaxContext>
         <AnswerProvider>
@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
       </MathJaxContext>
     ),
   },
-  { path: "/register", element: <RegisterPage /> },
+  { path: "/", element: <RegisterPage /> },
   { path: "/pretest", element: <PreTestPage /> },
 ]);
 function App() {

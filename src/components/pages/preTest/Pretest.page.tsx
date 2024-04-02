@@ -23,7 +23,7 @@ const PreTestPage: React.FC = () => {
           <li className="mb-2">Double-check your answers if time allows.</li>
         </ul>
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/test")}
           className="bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600"
         >
           Start Test

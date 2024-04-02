@@ -19,6 +19,7 @@ function ButtonContainer({
     <div className="flex gap-12 mt-10">
       <Button btnText="Previous" onClick={onPrevious} />
       <Button btnText="Next" onClick={onNext} />
+      <Button btnText="Submit" onClick={onSubmit} />
       {currentQuestionIndex === 39 && (
         <Button btnText="Submit" onClick={onSubmit} />
       )}{" "}
