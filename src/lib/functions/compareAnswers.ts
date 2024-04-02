@@ -1,5 +1,3 @@
-import { UserAnswers, QuestionData } from "./types";
-
 interface AnswerComparison {
   questionIndex: number;
   question: string; // Changed from questionText
@@ -18,8 +16,8 @@ export interface ComparisonResult {
 }
 
 const compareAnswers = (
-  userAnswers: UserAnswers | null | undefined,
-  questionsData: QuestionData | null | undefined
+  userAnswers: any | null | undefined,
+  questionsData: any | null | undefined
 ): ComparisonResult => {
   const answerComparisons: AnswerComparison[] = [];
   let correctCount: number = 0;

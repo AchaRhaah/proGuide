@@ -1,10 +1,23 @@
 import React, { createContext, useContext, useEffect, useReducer } from "react";
 
+// Define the action type
+type AnswerAction = {
+  type: "SELECT_ANSWER";
+  questionId: string;
+  answer: string;
+};
+
 // Define your context
-const AnswerContext = createContext({});
+const AnswerContext = createContext<{
+  answers: Record<string, string>;
+  dispatch: React.Dispatch<AnswerAction>;
+}>({
+  answers: {},
+  dispatch: () => {},
+});
 
 // Define your reducer
-const answerReducer = (state, action) => {
+const answerReducer = (state: Record<string, string>, action: AnswerAction) => {
   switch (action.type) {
     case "SELECT_ANSWER":
       return { ...state, [action.questionId]: action.answer };
@@ -23,7 +36,9 @@ const useAnswerContext = () => {
 };
 
 // Provider component
-const AnswerProvider = ({ children }: { children: React.ReactNode }) => {
+const AnswerProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [answers, dispatch] = useReducer(answerReducer, {});
 
   // Load previously saved answers from localStorage on component mount

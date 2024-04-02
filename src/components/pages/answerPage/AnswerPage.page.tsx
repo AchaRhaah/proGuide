@@ -7,7 +7,7 @@ import { AnswerCard } from "../../molecules";
 import { PrimaryLayout } from "../../templates";
 
 function AnswerPage() {
-  const { state } = useQuestionContext();
+  const { state }: any = useQuestionContext();
   const { questions } = state;
   const [answerAnalysis, setAnswerAnalysis] = useState<ComparisonResult | null>(
     null

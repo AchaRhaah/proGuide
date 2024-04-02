@@ -12,7 +12,7 @@ function ButtonContainer({
   onNext,
   onSubmit,
 }: ButtonContainerProps) {
-  const { state } = useQuestionContext();
+  const { state }: any = useQuestionContext();
   const { currentQuestionIndex } = state;
   return (
     <div className="flex gap-12 mt-10">

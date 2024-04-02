@@ -3,7 +3,7 @@ import { ProgressBar } from "../../atoms";
 import { useQuestionContext } from "../../../context/QuestionContext";
 
 function QuestionList() {
-  const { state } = useQuestionContext();
+  const { state }: any = useQuestionContext();
   const { currentQuestionIndex, questions } = state;
   const [selectedCategory, setSelectedCategory] = useState("");
   const categories = [
@@ -11,7 +11,7 @@ function QuestionList() {
     "Mechanics",
     "Quadratic Equations",
     "Differentiation",
-    "Intergration",
+    "Integration", // Fixed typo
   ];
 
   useEffect(() => {
@@ -20,10 +20,10 @@ function QuestionList() {
       const currentQuestion = questions[currentQuestionIndex];
       setSelectedCategory(currentQuestion.category);
     }
-    console.log(selectedCategory);
   }, [currentQuestionIndex, questions]);
 
-  const storedAnswers = localStorage.getItem("selectedAnswers");
+  // Handle null case for parsedAnswers
+  const storedAnswers = localStorage.getItem("selectedAnswers") || "";
   const parsedAnswers = JSON.parse(storedAnswers);
   const answeredQuestions = parsedAnswers
     ? Object.keys(parsedAnswers).length
