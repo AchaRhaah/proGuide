@@ -1,5 +1,10 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
-import { QuestionPage, AnswerPage } from "./components/pages";
+import {
+  QuestionPage,
+  AnswerPage,
+  RegisterPage,
+  PreTestPage,
+} from "./components/pages";
 import { QuestionProvider } from "./context/QuestionContext";
 import { AnswerProvider } from "./context/AnswerContext";
 import { MathJaxContext } from "better-react-mathjax";
@@ -28,6 +33,8 @@ export const router = createBrowserRouter([
       </MathJaxContext>
     ),
   },
+  { path: "/register", element: <RegisterPage /> },
+  { path: "/pretest", element: <PreTestPage /> },
 ]);
 function App() {
   return (

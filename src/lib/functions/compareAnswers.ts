@@ -2,16 +2,19 @@ import { UserAnswers, QuestionData } from "./types";
 
 interface AnswerComparison {
   questionIndex: number;
+  question: string; // Changed from questionText
   correctAnswer: string;
   correctAnswerOptionIndex: number;
   userAnswer: string;
   userAnswerOptionIndex: number;
   isCorrect: boolean;
+  explanation?: string;
 }
 
 interface ComparisonResult {
   answerComparisons: AnswerComparison[];
   correctCount: number;
+  totalAnsweredQuestions: number;
 }
 
 const compareAnswers = (
@@ -20,10 +23,11 @@ const compareAnswers = (
 ): ComparisonResult => {
   const answerComparisons: AnswerComparison[] = [];
   let correctCount: number = 0;
+  let totalAnsweredQuestions: number = 0;
 
   if (!userAnswers || !questionsData) {
     console.error("User answers or questions data is null or undefined");
-    return { answerComparisons, correctCount };
+    return { answerComparisons, correctCount, totalAnsweredQuestions };
   }
 
   Object.keys(questionsData).forEach((questionIndexStr) => {
@@ -31,30 +35,43 @@ const compareAnswers = (
     const questionData = questionsData[questionIndexStr];
     const correctAnswer: string = questionData.correctAnswer;
     const options: string[] = questionData.options;
+    const explanation: string | undefined = questionData.explanation;
+    const question: string = questionData.question; // Changed to use question property
 
-    const correctAnswerOptionIndex: number = options.indexOf(correctAnswer) + 1; // Adding 1 to indicate the position
+    const correctAnswerOptionIndex: number = options.indexOf(correctAnswer) + 1;
 
     const userAnswer: string = userAnswers[questionIndexStr] ?? "";
-
-    const userAnswerOptionIndex: number = options.indexOf(userAnswer) + 1; // Adding 1 to indicate the position
-
+    const userAnswerOptionIndex: number = userAnswer
+      ? options.indexOf(userAnswer) + 1
+      : 0;
     const isCorrect: boolean = userAnswer === correctAnswer;
 
     if (isCorrect) {
-      correctCount++; // Increment correctCount if the answer is correct
+      correctCount++;
     }
 
-    answerComparisons.push({
+    if (userAnswer !== "") {
+      totalAnsweredQuestions++;
+    }
+
+    const comparison: AnswerComparison = {
       questionIndex,
+      question,
       correctAnswer,
       correctAnswerOptionIndex,
       userAnswer,
       userAnswerOptionIndex,
       isCorrect,
-    });
+    };
+
+    if (!isCorrect && explanation) {
+      comparison.explanation = explanation;
+    }
+
+    answerComparisons.push(comparison);
   });
 
-  return { answerComparisons, correctCount };
+  return { answerComparisons, correctCount, totalAnsweredQuestions };
 };
 
 export default compareAnswers;

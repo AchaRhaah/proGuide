@@ -9,7 +9,7 @@ function Button({
 }) {
   return (
     <button
-      className="out outline-none w-28 h-10 bg-[#0653fb] rounded-xl text-white"
+      className="out outline-none w-28 h-10 bg-primary rounded-xl text-white hover:bg-[#0654fba8]"
       onClick={onClick}
     >
       {btnText}

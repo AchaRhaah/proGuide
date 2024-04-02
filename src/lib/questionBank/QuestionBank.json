@@ -56,6 +56,74 @@
       "explanation": ""
     }
   ],
+  "Mechanics": [
+    {
+      "id": 1,
+      "category": "Mechanics",
+      "question": "You accelerate the two blocks in the image below by pushing on the bottom block with a force F. The top block moves along with the bottom block. What force directly causes the top block to accelerate?",
+      "image": "src/assets/questionImages/mech1.png",
+      "options": [
+        "the normal force between the blocks",
+        "the friction force between the blocks",
+        " the gravitational force on the top block",
+        " the force you apply to the bottom block"
+      ],
+      "correctAnswer": "the friction force between the blocks",
+      "explanation": ""
+    },
+    {
+      "id": 2,
+      "category": "Mechanics",
+
+      "question": "Three boxes are pushed with a force F across a frictionless table, as shown in the image below. Let N1 be the normal force between the left two boxes, and let N2 be the normal force between the right two boxes. Then:",
+      "image": "src/assets/questionImages/mech2.png",
+      "options": [
+        "$$ F = N_{1} = N_{2}$$",
+        "$$F > N_{1} = N_{2}$$",
+        "$$F + N_{1} = N_{2}$$",
+        "$$F > N_{1} > N_{2}$$"
+      ],
+      "correctAnswer": "D. $$F > N_{1} > N_{2}$$"
+    },
+    {
+      "id": 3,
+      "category": "Mechanics",
+      "question": "Two blocks with masses 2 kg and 1 kg lie on a frictionless table. A force of 3 N is appliedas shown in the image below What is the normal force between the blocks?",
+      "image": "src/assets/questionImages/mech3.png",
+      "options": ["$$5 N$$", "$$0 N$$", "$$1 N$$", "$$3 N$$"],
+      "correctAnswer": "$$1 N$$"
+    },
+    {
+      "id": 4,
+      "category": "Mechanics",
+      "question": "A block sits on a plane, and there is friction between the block and the plane. The plane is accelerated to the right If the block remains at the same position on the plane, which of the following pictures might show the free-body diagram for the block? (All of the vectors shown are forces.)",
+      "image": "",
+      "options": [
+        "src/assets/answerImages/a_block_sits_on_a_plane/a.png",
+        "src/assets/answerImages/a_block_sits_on_a_plane/b.png",
+        "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
+        "src/assets/answerImages/a_block_sits_on_a_plane/d.png"
+      ],
+
+      "correctAnswer": "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
+      "explanation": "The gravitational force exists, as does the normal force (to keep the block from falling though the plane). The friction force might or might not exist (and it might point in either direction). So the correct answer must be (a), (b), or (c). But ma isn’t a force, so we’re left with choice (c) as the only possibility. If you want to draw the acceleration vector in a free-body diagram, you must draw it differently (say, with a dotted line) to signify that it isn’t a force!"
+    },
+    {
+      "id": 5,
+      "category": "Mechanics",
+      "question": ". A plane in a holding pattern is flying in a horizontal circle at constant speed. Which of the following free-body diagrams best illustrates the various forces acting on the plane at the instant shown?",
+      "image": "",
+      "options": [
+        "src/assets/answerImages/a_plane_in_a_holding/a.png",
+        "src/assets/answerImages/a_plane_in_a_holding/b.png",
+        "src/assets/answerImages/a_plane_in_a_holding/c.png",
+        "src/assets/answerImages/a_plane_in_a_holding/d.png"
+      ],
+
+      "correctAnswer": "src/assets/answerImages/a_plane_in_a_holding/c.png",
+      "explanation": "Gravity acts downward. The force from the air must have an upward component to balance gravity (because there is zero vertical acceleration), and also a radially inward component to provide the nonzero centripetal acceleration. So the net force from the air points in a diagonal direction, upward and leftward. The gravitational and air forces are the only two forces, so the correct answer is (c)."
+    }
+  ],
   "quadraticEquations": [
     {
       "id": 1,
@@ -452,74 +520,6 @@
         "$$2\\ln(2x) + C$$"
       ],
       "correctAnswer": "$$\\ln(2x)^2 + C$$"
-    }
-  ],
-  "Mechanics": [
-    {
-      "id": 1,
-      "category": "Mechanics",
-      "question": "You accelerate the two blocks in the image below by pushing on the bottom block with a force F. The top block moves along with the bottom block. What force directly causes the top block to accelerate?",
-      "image": "src/assets/questionImages/mech1.png",
-      "options": [
-        "the normal force between the blocks",
-        "the friction force between the blocks",
-        " the gravitational force on the top block",
-        " the force you apply to the bottom block"
-      ],
-      "correctAnswer": "the friction force between the blocks",
-      "explanation": ""
-    },
-    {
-      "id": 2,
-      "category": "Mechanics",
-
-      "question": "Three boxes are pushed with a force F across a frictionless table, as shown in the image below. Let N1 be the normal force between the left two boxes, and let N2 be the normal force between the right two boxes. Then:",
-      "image": "src/assets/questionImages/mech2.png",
-      "options": [
-        "$$ F = N_{1} = N_{2}$$",
-        "$$F > N_{1} = N_{2}$$",
-        "$$F + N_{1} = N_{2}$$",
-        "$$F > N_{1} > N_{2}$$"
-      ],
-      "correctAnswer": "D. $$F > N_{1} > N_{2}$$"
-    },
-    {
-      "id": 3,
-      "category": "Mechanics",
-      "question": "Two blocks with masses 2 kg and 1 kg lie on a frictionless table. A force of 3 N is appliedas shown in the image below What is the normal force between the blocks?",
-      "image": "src/assets/questionImages/mech3.png",
-      "options": ["$$5 N$$", "$$0 N$$", "$$1 N$$", "$$3 N$$"],
-      "correctAnswer": "$$1 N$$"
-    },
-    {
-      "id": 4,
-      "category": "Mechanics",
-      "question": "A block sits on a plane, and there is friction between the block and the plane. The plane is accelerated to the right If the block remains at the same position on the plane, which of the following pictures might show the free-body diagram for the block? (All of the vectors shown are forces.)",
-      "image": "",
-      "options": [
-        "src/assets/answerImages/a_block_sits_on_a_plane/a.png",
-        "src/assets/answerImages/a_block_sits_on_a_plane/b.png",
-        "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
-        "src/assets/answerImages/a_block_sits_on_a_plane/d.png"
-      ],
-
-      "correctAnswer": "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
-      "explanation": "The gravitational force exists, as does the normal force (to keep the block from falling though the plane). The friction force might or might not exist (and it might point in either direction). So the correct answer must be (a), (b), or (c). But ma isn’t a force, so we’re left with choice (c) as the only possibility. If you want to draw the acceleration vector in a free-body diagram, you must draw it differently (say, with a dotted line) to signify that it isn’t a force!"
-    },
-    {
-      "id": 5,
-      "category": "Mechanics",
-      "question": ". A plane in a holding pattern is flying in a horizontal circle at constant speed. Which of the following free-body diagrams best illustrates the various forces acting on the plane at the instant shown?",
-      "image": "",
-      "options": [
-        "src/assets/answerImages/a_plane_in_a_holding/a.png",
-        "src/assets/answerImages/a_plane_in_a_holding/b.png",
-        "src/assets/answerImages/a_plane_in_a_holding/c.png",
-        "src/assets/answerImages/a_plane_in_a_holding/d.png"
-      ],
-
-      "correctAnswer": "src/assets/answerImages/a_block_sits_on_a_plane/c.png",
-      "explanation": "Gravity acts downward. The force from the air must have an upward component to balance gravity (because there is zero vertical acceleration), and also a radially inward component to provide the nonzero centripetal acceleration. So the net force from the air points in a diagonal direction, upward and leftward. The gravitational and air forces are the only two forces, so the correct answer is (c)."
     }
   ]
 }

@@ -9,10 +9,10 @@ function QuestionList() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const categories = [
     "Algebra",
+    "Mechanics",
     "Quadratic Equations",
     "Differentiation",
     "Intergration",
-    "Mechanics",
   ];
 
   useEffect(() => {

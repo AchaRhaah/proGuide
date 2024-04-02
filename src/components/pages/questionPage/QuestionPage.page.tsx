@@ -4,17 +4,24 @@ import { Question, ProgressBar } from "../../atoms";
 import { AnswerSegment } from "../../organisms";
 import { ButtonContainer } from "../../molecules";
 import { useQuestionContext } from "../../../context/QuestionContext";
-
+import { useNavigate } from "react-router-dom";
 function QuestionPage() {
-const { state, dispatch } = useQuestionContext();
-const { questions, currentQuestionIndex } = state;
+  const { state, dispatch } = useQuestionContext();
+  const { questions, currentQuestionIndex } = state;
   const currentQuestion = questions[currentQuestionIndex];
+  const navigate = useNavigate();
+  const storedAnswers = localStorage.getItem("selectedAnswers");
 
   // Initialize state to store selected answers, defaulting to values from local storage
   const [selectedAnswers, setSelectedAnswers] = useState(() => {
     const storedAnswers = localStorage.getItem("selectedAnswers");
     return storedAnswers ? JSON.parse(storedAnswers) : {};
   });
+  const parsedAnswers = JSON.parse(storedAnswers);
+
+  const answeredQuestions = parsedAnswers
+    ? Object.keys(parsedAnswers).length
+    : 0;
 
   // Function to handle selection of answer
   const handleSelectAnswer = (answer: string) => {
@@ -38,6 +45,7 @@ const { questions, currentQuestionIndex } = state;
         answer: selectedAnswers[currentQuestionIndex],
       },
     });
+    navigate("/answers");
   };
 
   if (state.isLoading) {
@@ -71,8 +79,15 @@ const { questions, currentQuestionIndex } = state;
                 dispatch({ type: "PREVIOUS_QUESTION" });
               }
             }}
-            onNext={() => dispatch({ type: "NEXT_QUESTION" })}
+            onNext={() => {
+              if (currentQuestionIndex < 39) {
+                dispatch({ type: "NEXT_QUESTION" });
+              }
+            }}
           />
+          <div className="w-full self-end mt-24 lg:hidden">
+            <ProgressBar answeredQuestions={answeredQuestions} />
+          </div>
         </div>
       </div>
     </PrimaryLayout>

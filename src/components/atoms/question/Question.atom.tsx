@@ -1,6 +1,6 @@
 import React from "react";
 import { MathJax } from "better-react-mathjax";
-
+import { Timer } from "..";
 function Question({
   question,
   image,
@@ -18,11 +18,12 @@ function Question({
         </h3>
         {image !== "" && <img src={image} alt={question} />}
       </div>
-      <div>
+      <Timer />
+      {/* <div>
         <p className="t text-green-500 font-medium border border-green-500 rounded-sm p-2 px-4">
           5:30
         </p>
-      </div>
+      </div> */}
       {/* <hr className="mt-8" /> */}
     </div>
   );

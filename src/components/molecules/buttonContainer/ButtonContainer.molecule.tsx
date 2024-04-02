@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../../atoms";
+import { useQuestionContext } from "../../../context/QuestionContext";
 
 interface ButtonContainerProps {
   onPrevious: () => void;
@@ -12,11 +13,16 @@ function ButtonContainer({
   onNext,
   onSubmit,
 }: ButtonContainerProps) {
+  const { state, dispatch } = useQuestionContext();
+  const { currentQuestionIndex } = state;
   return (
-    <div className="flex gap-28 mt-10">
+    <div className="flex gap-12 mt-10">
       <Button btnText="Previous" onClick={onPrevious} />
       <Button btnText="Next" onClick={onNext} />
-      <Button btnText="Submit" onClicsk={onSubmit} /> Add Submit button
+      {currentQuestionIndex === 39 && (
+        <Button btnText="Submit" onClick={onSubmit} />
+      )}{" "}
+      {/* Add Submit button */}
     </div>
   );
 }
