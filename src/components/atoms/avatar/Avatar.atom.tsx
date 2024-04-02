@@ -1,5 +1,6 @@
 import React from "react";
 import { BsPersonFill } from "react-icons/bs";
+import { Button } from "..";
 
 function Avatar() {
   return (
@@ -7,9 +8,7 @@ function Avatar() {
       <BsPersonFill className="w-8 h-8 rounded-full" />
       <div className="font-medium dark:text-white">
         <div>Jese Leos</div>
-        <div className="text-sm text-gray-500 dark:text-gray-400">
-          Joined in August 2014
-        </div>
+        <Button btnText="End Test" onClick={() => {}} />
       </div>
     </div>
   );

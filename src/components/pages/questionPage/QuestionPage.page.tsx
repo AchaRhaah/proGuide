@@ -6,8 +6,8 @@ import { ButtonContainer } from "../../molecules";
 import { useQuestionContext } from "../../../context/QuestionContext";
 
 function QuestionPage() {
-  const { state, dispatch } = useQuestionContext();
-  const { questions, currentQuestionIndex } = state;
+const { state, dispatch } = useQuestionContext();
+const { questions, currentQuestionIndex } = state;
   const currentQuestion = questions[currentQuestionIndex];
 
   // Initialize state to store selected answers, defaulting to values from local storage

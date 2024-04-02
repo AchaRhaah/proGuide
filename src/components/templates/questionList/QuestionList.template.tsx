@@ -1,15 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ProgressBar } from "../../atoms";
 import questionsData from "../../../lib/questionBank/QuestionBank.json";
+import { useQuestionContext } from "../../../context/QuestionContext";
 
 function QuestionList() {
-  const categoriesName = Object.keys(questionsData);
+  const { state } = useQuestionContext();
+  const { currentQuestionIndex, questions } = state;
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const categories = [
+    "Algebra",
+    "Quadratic Equations",
+    "Differentiation",
+    "Intergration",
+    "Mechanics",
+  ];
 
-  const [selectedCategory, setSelectedCategory] = useState(categoriesName[0]);
+  useEffect(() => {
+    // Update the selected category when the current question index changes
+    if (currentQuestionIndex !== undefined && currentQuestionIndex !== -1) {
+      const currentQuestion = questions[currentQuestionIndex];
+      setSelectedCategory(currentQuestion.category);
+    }
+    console.log(selectedCategory);
+  }, [currentQuestionIndex, questions]);
 
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-  };
+  const storedAnswers = localStorage.getItem("selectedAnswers");
+  const parsedAnswers = JSON.parse(storedAnswers);
+  const answeredQuestions = parsedAnswers
+    ? Object.keys(parsedAnswers).length
+    : 0;
 
   return (
     <div className="h-full w-[22%] top-0 left-0 z-10 bg-white overflow-y-auto border-r-2 border-gray-100 px-8 border hidden lg:flex flex-col ">
@@ -18,20 +37,19 @@ function QuestionList() {
         <p className="text-sm my-2">
           This test contains the following categories
         </p>
-        <ul className="gap-1 flex flex-col mt-6 text-primary font-medium">
-          {categoriesName.map((category, index) => (
+        <ul className="gap-1 flex flex-col mt-6 text-primary font-medium text-sm">
+          {categories.map((category, index) => (
             <li
               key={index}
               className={`py-2 px-1 rounded-lg ${
-                selectedCategory === category ? "bg-[#f0f4ff]" : ""
+                categories[index] === selectedCategory ? "bg-[#f0f4ff]" : ""
               }`}
-              onClick={() => handleCategoryClick(category)}
             >
               {category}
             </li>
           ))}
         </ul>
-        <ProgressBar />
+        <ProgressBar answeredQuestions={answeredQuestions} />
       </div>
     </div>
   );

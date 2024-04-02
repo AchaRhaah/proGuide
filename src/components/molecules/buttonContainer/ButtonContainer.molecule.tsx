@@ -16,7 +16,7 @@ function ButtonContainer({
     <div className="flex gap-28 mt-10">
       <Button btnText="Previous" onClick={onPrevious} />
       <Button btnText="Next" onClick={onNext} />
-      <Button btnText="Submit" onClick={onSubmit} /> {/* Add Submit button */}
+      <Button btnText="Submit" onClicsk={onSubmit} /> Add Submit button
     </div>
   );
 }

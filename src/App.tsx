@@ -1,5 +1,5 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
-import { QuestionPage } from "./components/pages";
+import { QuestionPage, AnswerPage } from "./components/pages";
 import { QuestionProvider } from "./context/QuestionContext";
 import { AnswerProvider } from "./context/AnswerContext";
 import { MathJaxContext } from "better-react-mathjax";
@@ -11,6 +11,18 @@ export const router = createBrowserRouter([
         <AnswerProvider>
           <QuestionProvider>
             <QuestionPage />
+          </QuestionProvider>
+        </AnswerProvider>
+      </MathJaxContext>
+    ),
+  },
+  {
+    path: "/answers",
+    element: (
+      <MathJaxContext>
+        <AnswerProvider>
+          <QuestionProvider>
+            <AnswerPage />
           </QuestionProvider>
         </AnswerProvider>
       </MathJaxContext>

@@ -13,7 +13,6 @@ function AnswerSegment({
   selectedOption,
   onSelect,
 }: AnswerSegmentProps) {
-  console.log(isFilePath(options[0]));
   return (
     <div className={"w-full grid grid-cols-2"}>
       {options.map((option, index) => (
