@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Timer: React.FC = () => {
-  const [duration, setDuration] = useState<number>(180); // 3 minutes in seconds
+  const duration: number = 180; // 3 minutes in seconds
   const [timeLeft, setTimeLeft] = useState<number>(duration);
   const [isRunning, setIsRunning] = useState<boolean>(true); // Timer starts running when component mounts
   const navigate = useNavigate();
@@ -27,11 +27,6 @@ const Timer: React.FC = () => {
 
     return () => clearInterval(intervalId);
   }, [isRunning, history]);
-
-  const handleReset = () => {
-    setTimeLeft(duration);
-    setIsRunning(true); // Start the timer again after reset
-  };
 
   return (
     <div className="">

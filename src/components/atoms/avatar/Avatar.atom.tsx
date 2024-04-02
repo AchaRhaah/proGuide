@@ -1,11 +1,6 @@
-import React from "react";
 import { BsPersonFill } from "react-icons/bs";
-import { Button } from "..";
-import { Link, useLocation } from "react-router-dom";
 
 function Avatar() {
-  const location = useLocation(); // Get the current location
-
   return (
     <div className="flex items-center gap-4">
       <BsPersonFill className="w-8 h-8 rounded-full" />

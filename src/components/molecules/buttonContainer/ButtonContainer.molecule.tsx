@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../atoms";
 import { useQuestionContext } from "../../../context/QuestionContext";
 
@@ -13,7 +12,7 @@ function ButtonContainer({
   onNext,
   onSubmit,
 }: ButtonContainerProps) {
-  const { state, dispatch } = useQuestionContext();
+  const { state } = useQuestionContext();
   const { currentQuestionIndex } = state;
   return (
     <div className="flex gap-12 mt-10">

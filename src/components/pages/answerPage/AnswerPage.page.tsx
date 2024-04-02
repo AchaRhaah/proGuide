@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
-import compareAnswers from "../../../lib/functions/compareAnswers";
+import { useEffect, useState } from "react";
+import compareAnswers, {
+  ComparisonResult,
+} from "../../../lib/functions/compareAnswers";
 import { useQuestionContext } from "../../../context/QuestionContext";
 import { AnswerCard } from "../../molecules";
 import { PrimaryLayout } from "../../templates";
@@ -7,30 +9,29 @@ import { PrimaryLayout } from "../../templates";
 function AnswerPage() {
   const { state } = useQuestionContext();
   const { questions } = state;
-  const [answers, setAnswers] = useState();
-  const [answerAnalysis, setAnswerAnalysis] = useState(null); // Initialize answerAnalysis state as null
+  const [answerAnalysis, setAnswerAnalysis] = useState<ComparisonResult | null>(
+    null
+  );
 
   useEffect(() => {
     const storedAnswers = localStorage.getItem("selectedAnswers");
-    const parsedAnswers = JSON.parse(storedAnswers);
-    setAnswers(parsedAnswers);
-    if (parsedAnswers) {
+
+    if (storedAnswers && questions) {
+      const parsedAnswers = JSON.parse(storedAnswers);
       const analysis = compareAnswers(parsedAnswers, questions);
       setAnswerAnalysis(analysis);
     }
   }, [questions]);
 
-  // Check if answerAnalysis is still null or undefined
   if (!answerAnalysis) {
     return <div>Loading...</div>;
   }
 
-  // Check if answerComparisons is still undefined
   if (!answerAnalysis.answerComparisons) {
     return <div>No answer comparisons found</div>;
   }
 
-  if (!state.questions || state.questions.length === 0) {
+  if (!questions || questions.length === 0) {
     return <div>No questions found</div>;
   }
 
@@ -42,9 +43,9 @@ function AnswerPage() {
           &#8226; {answerAnalysis.correctCount} correct
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 pb-2">
-          {answerAnalysis.answerComparisons.map((answer, index) => (
+          {answerAnalysis.answerComparisons.map((answer: any, index: any) => (
             <AnswerCard
-              key={index} // Add key prop when mapping over components
+              key={index}
               questionNumber={answer.questionIndex + 1}
               question={answer.question}
               correctAnswer={answer.correctAnswer}

@@ -1,16 +1,8 @@
-import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineArrowRight } from "react-icons/ai";
-import { RxCross1 } from "react-icons/rx";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { useLocation } from "react-router-dom"; // Import useLocation
 import { Avatar } from "../../atoms";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
   const location = useLocation(); // Get the current location
-
-  const handleChange = () => {
-    setMenu(!menu);
-  };
 
   // Dynamically set the header text based on the URL
   const headerText = location.pathname === "/answers" ? "Score" : "Math Quiz";

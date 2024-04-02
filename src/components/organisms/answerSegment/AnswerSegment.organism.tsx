@@ -1,6 +1,4 @@
-import React from "react";
 import { Answer } from "../../atoms";
-import { isFilePath } from "../../../lib/functions/isFilePath";
 
 interface AnswerSegmentProps {
   options: string[];

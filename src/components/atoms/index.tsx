@@ -7,4 +7,3 @@ export { default as Answer } from "./answer/Answer.atom";
 export { default as Avatar } from "./avatar/Avatar.atom";
 export { default as Button } from "./button/Button.atom";
 export { default as Avatar2 } from "./avatar2/Avatar2.atom";
-export { default as Input } from "./input/Input.atom";

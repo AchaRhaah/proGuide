@@ -11,7 +11,7 @@ interface AnswerComparison {
   explanation?: string;
 }
 
-interface ComparisonResult {
+export interface ComparisonResult {
   answerComparisons: AnswerComparison[];
   correctCount: number;
   totalAnsweredQuestions: number;

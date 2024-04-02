@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ProgressBar } from "../../atoms";
-import questionsData from "../../../lib/questionBank/QuestionBank.json";
 import { useQuestionContext } from "../../../context/QuestionContext";
 
 function QuestionList() {

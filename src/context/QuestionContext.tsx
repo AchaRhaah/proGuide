@@ -1,9 +1,8 @@
-import React, {
+import {
   createContext,
   useContext,
   useReducer,
   useEffect,
-  Dispatch,
   ReactNode,
 } from "react";
 import questionsData from "../lib/questionBank/QuestionBank.json";
@@ -26,11 +25,6 @@ type QuestionAction =
   | { type: "PREVIOUS_QUESTION" }
   | { type: "LOAD_QUESTIONS"; payload: Question[] };
 
-interface QuestionContextType {
-  state: QuestionState;
-  dispatch: Dispatch<QuestionAction>;
-}
-
 // export const QuestionContext = createContext<QuestionContextType | undefined>(
 //   undefined
 // );
@@ -39,11 +33,10 @@ export const QuestionContext = createContext({});
 export const useQuestionContext = () => {
   const context = useContext(QuestionContext);
   if (!context) {
-    // Consider a more informative message or conditional rendering for missing context
     console.error(
       "QuestionContext not found. Ensure you're using it within QuestionProvider."
     );
-    return null; // Or throw an error if strict behavior is needed
+    return { state: initialState, dispatch: () => {} }; // Provide a default value
   }
   return context;
 };

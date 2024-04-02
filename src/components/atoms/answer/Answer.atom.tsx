@@ -1,9 +1,15 @@
 // Answer.jsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { MathJax } from "better-react-mathjax";
 import { isFilePath } from "../../../lib/functions/isFilePath";
 
-const Answer = ({ option, index, onSelect, selectedOption }) => {
+interface Props {
+  option: any;
+  index: number;
+  onSelect: (opt: any) => void;
+  selectedOption: any;
+}
+const Answer = ({ option, index, onSelect, selectedOption }: Props) => {
   const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
