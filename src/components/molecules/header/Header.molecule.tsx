@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <header
-      className={`text-gray-600 z-40 body-font sm:bg-white fixed w-full border border-b-2 ${
-        location.pathname === "/answers" ? "p-5" : ""
-      }`}
+      className={
+        "text-gray-600 z-40 body-font sm:bg-white fixed w-full border border-b-2 p-5"
+      }
     >
       <div className="container mx-auto flex flex-wrap px-5 py-1 flex-row  md:flex-row justify-between items-center bg-white">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
