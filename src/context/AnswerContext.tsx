@@ -1,11 +1,9 @@
 import React, { createContext, useContext, useEffect, useReducer } from "react";
 
 // Define the action type
-type AnswerAction = {
-  type: "SELECT_ANSWER";
-  questionId: string;
-  answer: string;
-};
+type AnswerAction =
+  | { type: "SELECT_ANSWER"; questionId: string; answer: string }
+  | { type: "LOAD_ANSWERS"; answers: Record<string, string> };
 
 // Define your context
 const AnswerContext = createContext<{
@@ -21,6 +19,8 @@ const answerReducer = (state: Record<string, string>, action: AnswerAction) => {
   switch (action.type) {
     case "SELECT_ANSWER":
       return { ...state, [action.questionId]: action.answer };
+    case "LOAD_ANSWERS":
+      return { ...action.answers };
     default:
       return state;
   }
