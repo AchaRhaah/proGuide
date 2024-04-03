@@ -1,4 +1,5 @@
 import { MathJax } from "better-react-mathjax";
+import React from "react";
 import { Timer } from "..";
 function Question({
   question,

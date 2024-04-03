@@ -1,3 +1,4 @@
+import React from "react";
 import { Header } from "../../molecules";
 function PrimaryLayout({ children }: { children: React.ReactNode }) {
   return (

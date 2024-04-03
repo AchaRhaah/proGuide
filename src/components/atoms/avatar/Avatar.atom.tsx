@@ -1,3 +1,4 @@
+import React from "react";
 import { BsPersonFill } from "react-icons/bs";
 
 function Avatar() {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ProgressBar } from "../../atoms";
 import { useQuestionContext } from "../../../context/QuestionContext";
 

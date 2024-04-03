@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { isFilePath } from "../../../lib/functions/isFilePath";
 import { MathJax } from "better-react-mathjax";
 import { Button } from "../../atoms";

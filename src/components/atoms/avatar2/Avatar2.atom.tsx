@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Avatar2() {
   return (
     <div className="flex -space-x-4 rtl:space-x-reverse">

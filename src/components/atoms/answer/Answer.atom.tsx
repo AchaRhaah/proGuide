@@ -1,5 +1,5 @@
 // Answer.jsx
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { MathJax } from "better-react-mathjax";
 import { isFilePath } from "../../../lib/functions/isFilePath";
 
