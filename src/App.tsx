@@ -8,6 +8,7 @@ import {
 import { QuestionProvider } from "./context/QuestionContext";
 import { AnswerProvider } from "./context/AnswerContext";
 import { MathJaxContext } from "better-react-mathjax";
+import React from "react";
 export const router = createBrowserRouter([
   {
     path: "/test",
